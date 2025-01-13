@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.profile-section {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+.details-section {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+section {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* App.css */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.technical-skills, .education, .experience, .certification, .contact-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}

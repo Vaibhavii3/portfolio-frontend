@@ -1,6 +1,6 @@
 // components/Education.js
 import React from 'react';
-import "../style/Education.css";
+// import "../style/Education.css";
 
 const Education = () => {
   // const educationDetails = [

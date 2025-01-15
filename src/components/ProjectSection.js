@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/ProjectSection.css";
+// import "../style/ProjectSection.css";
 
 function ProjectSection() {
   return (

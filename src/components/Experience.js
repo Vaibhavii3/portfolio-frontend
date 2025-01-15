@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/Experience.css";
+// import "../style/Experience.css";
 
 const Experience = () => {
   // const experienceDetails = [

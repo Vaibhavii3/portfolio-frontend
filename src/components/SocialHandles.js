@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/SocialHandles.css';
+// import '../style/SocialHandles.css';
 
 function SocialHandles() {
   return (

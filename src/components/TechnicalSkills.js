@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/TechnicalSkills.css';
+// import '../style/TechnicalSkills.css';
 
 const TechnicalSkills = () => {
   // const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']; 

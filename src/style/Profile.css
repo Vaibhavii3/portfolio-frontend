@@ -1,0 +1,16 @@
+.main-box {
+    /* border: 2px solid #9b9898; */
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    /* padding: 5px; */
+    margin: 15px;
+}
+
+.image {
+    border-radius: 50%;
+    width: 250px;
+    /* border: 3px solid white; */
+    /* box-shadow: 8px 0px 8px #999; */
+    
+}

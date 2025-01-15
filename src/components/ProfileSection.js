@@ -1,13 +1,23 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+import '../style/Profile.css';
 
 function ProfileSection() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/profilePage");
+  }
+
   return (
-    <section>
-      <h2>Profile</h2>
-      <img src="profile.jpg" alt="Profile" style={{ borderRadius: '50%', width: '100px' }} />
-      <p>About Section</p>
-      <button>Customize</button>
-    </section>
+
+    <div className='main-box' onClick={handleClick}>
+
+      <img src="../img/profile.jpg" alt="Profile" className='image' style={{ borderRadius: '50%',  }} />
+
+    </div>
+
   );
 }
 

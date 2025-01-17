@@ -1,19 +1,19 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 // import "../style/Contact.css";
 
 const ContactSection = () => {
-  // const contactDetails = {
-  //   email: 'youremail@example.com',
-  //   phone: '+1234567890',
-  //   address: '123 Main Street, City, Country',
-  // }; 
+  
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contactPage");
+  }
 
   return (
-    <div className="contact-section">
+    <div className="contact-section" onClick={handleClick}>
       <h2 className='heading'>Contact</h2>
-      {/* <p><strong>Email:</strong> {contactDetails.email}</p>
-      <p><strong>Phone:</strong> {contactDetails.phone}</p>
-      <p><strong>Address:</strong> {contactDetails.address}</p> */}
     </div>
   );
 };

@@ -1,0 +1,40 @@
+.photo-gallery {
+    column-count: 5; /* Default columns */
+    column-gap: 16px;
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+}
+
+.photo-card {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Layouts */
+@media screen and (max-width: 1100px) {
+    .photo-gallery {
+        column-count: 4;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .photo-gallery {
+        column-count: 2;
+    }
+}

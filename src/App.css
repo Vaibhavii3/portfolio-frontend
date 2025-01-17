@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: Arial, sans-serif;
   background: linear-gradient(45deg, #0c0605, #622f63);
   color: #fff;
@@ -9,68 +9,3 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-.app {
-  box-sizing: border-box;
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.grid-item p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.profile {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
-.social {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
-.project {
-  grid-column: span 1;
-  grid-row:  span 2;
-}
-
-.experience {
-  grid-column: span 1;
-  grid-row:  span 2;
-}
-
-.contact {
-  grid-column: span 3;
-  grid-row:  span 1;
-} 
-
-

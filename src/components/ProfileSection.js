@@ -7,7 +7,7 @@ function ProfileSection() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/profilePage");
+    navigate("/AboutPage");
   }
 
   return (

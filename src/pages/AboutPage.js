@@ -1,12 +1,15 @@
 import React from "react";
 import BinaryLaptop from "../components/BinaryLaptop";
+import "../style/About.css";
+// import "../App.css";
 
-
-const ProfilePage = () => {
+const AboutPage = () => {
     return (
-        <div className="profile-page">
-          <h1>Welcome to My Profile</h1>
-          <BinaryLaptop />
+        <div className="hello">
+          <h1>Hey! I'm Vaibhavi </h1>
+
+          <BinaryLaptop className="laptop" />
+
           <p>
             I'm a passionate developer who creates interactive and responsive web
             applications!
@@ -15,4 +18,4 @@ const ProfilePage = () => {
       );
 };
 
-export default ProfilePage;
+export default AboutPage;

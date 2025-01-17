@@ -1,0 +1,84 @@
+/* About.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #0c0605, #622f63); /* Elegant gradient background */
+    color: #fff;
+    height: 100%;
+    overflow-x: hidden; /* Avoid horizontal scroll */
+  }
+  
+  .hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    padding: 40px 20px; /* Adjust padding for responsiveness */
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ffffff; 
+    animation: fadeIn 1s ease-in-out; /* Add entrance animation */
+  }
+  
+  .laptop {
+    max-width: 400px;
+    width: 80%;
+    margin: 20px 0;
+    animation: bounceIn 1.2s ease-out; /* Add animation for the laptop */
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    max-width: 800px;
+    color: #EAEAEA;
+    animation: fadeInUp 1.5s ease-in-out; /* Text slides in */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

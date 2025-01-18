@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import BinaryLaptop from "../components/BinaryLaptop";
+
 import "../style/About.css";
 // import "../App.css";
 

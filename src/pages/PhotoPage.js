@@ -22,23 +22,52 @@ const Photos = [
     { id:17, url:'../img/17.jpg'},
 ];
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3, // Images appear one after another
+        },
+    },
+};
+
+const imageVariants = {
+    hidden: { opacity: 0, scale: 0.9,},
+    visible: {
+        opacity: 1,
+        scale: 1,
+        
+        transition: { 
+            type: "spring",
+            stiffness: 60,
+            damping: 15,
+            duration: 1, },
+    },
+};
 
 function PhotoPage() {
     
     return (
         
-        <div className='photo-gallery'>
+        <motion.div
+            className="photo-gallery"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+        >
             {Photos.map((image) => (
                 <motion.div 
                 key={image.id}
                 className='photo-card'
+                variants={imageVariants}
                 whileHover={{ scale: 1.05}}
                 transition={{ type: 'spring', stiffness: 300}}
                 >
                     <img src={image.url} />
                 </motion.div>
             ))}
-        </div>
+        </motion.div>
     );
 }
 

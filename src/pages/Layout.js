@@ -135,60 +135,63 @@ function Layout() {
   };
 
   return (
-    <div className="app">
-      <motion.div
-        className="grid-container"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.div className="grid-item skills" variants={skillsVariants} whileHover={hoverEffect}>
-          <TechnicalSkills />
-        </motion.div>
 
-        <motion.div className="grid-item social" variants={socialVariants} whileHover={hoverEffect}>
-          <SocialHandles />
-        </motion.div>
-
-        <motion.div className="grid-item experience" variants={experienceVariants} whileHover={hoverEffect}>
-          <Experience />
-        </motion.div>
-
+    <div className='body-wrapper'>
+      <div className="app">
         <motion.div
-          className="grid-item profile"
-          variants={profileVariants}
-          initial="initial"
-          animate="animate"
-          whileHover={hoverEffect}
+          className="grid-container"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <ProfileSection />
+          <motion.div className="grid-item skills" variants={skillsVariants} whileHover={hoverEffect}>
+            <TechnicalSkills />
+          </motion.div>
+
+          <motion.div className="grid-item social" variants={socialVariants} whileHover={hoverEffect}>
+            <SocialHandles />
+          </motion.div>
+
+          <motion.div className="grid-item experience" variants={experienceVariants} whileHover={hoverEffect}>
+            <Experience />
+          </motion.div>
+
+          <motion.div
+            className="grid-item profile"
+            variants={profileVariants}
+            initial="initial"
+            animate="animate"
+            whileHover={hoverEffect}
+          >
+            <ProfileSection />
+          </motion.div>
+
+          <motion.div className="grid-item projects" variants={projectVariants} whileHover={hoverEffect}>
+            <ProjectSection />
+          </motion.div>
+
+          <motion.div className="grid-item education" variants={educationVariants} whileHover={hoverEffect}>
+            <Education />
+          </motion.div>
+
+          <motion.div className="grid-item contact" variants={contactVariants} whileHover={hoverEffect}>
+            <ContactSection />
+          </motion.div>
+
         </motion.div>
 
-        <motion.div className="grid-item projects" variants={projectVariants} whileHover={hoverEffect}>
-          <ProjectSection />
-        </motion.div>
-
-        <motion.div className="grid-item education" variants={educationVariants} whileHover={hoverEffect}>
-          <Education />
-        </motion.div>
-
-        <motion.div className="grid-item contact" variants={contactVariants} whileHover={hoverEffect}>
-          <ContactSection />
-        </motion.div>
-
-      </motion.div>
-
-      <Routes>
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/socialhandles" element={<SocialHandles />} />
-        <Route path="/technicalSkills" element={<TechnicalSkills />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<ProjectSection />} />
-        <Route path="/contact" element={<ContactSection />} />
-        <Route path="/profilePage" element={<ProfileSection />} />
-        {/* <Route path="/aboutPage" element={<AboutPage />} /> */}
-      </Routes>
-    </div>
+        <Routes>
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/socialhandles" element={<SocialHandles />} />
+          <Route path="/technicalSkills" element={<TechnicalSkills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<ProjectSection />} />
+          <Route path="/contact" element={<ContactSection />} />
+          <Route path="/profilePage" element={<ProfileSection />} />
+          {/* <Route path="/aboutPage" element={<AboutPage />} /> */}
+        </Routes>
+      </div>
+    </div>  
   );
 }
 

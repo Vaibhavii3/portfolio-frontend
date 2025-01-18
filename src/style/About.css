@@ -1,15 +1,10 @@
-/* About.css */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #0c0605, #622f63); /* Elegant gradient background */
-    color: #fff;
-    height: 100%;
-    overflow-x: hidden; /* Avoid horizontal scroll */
-  }
+
+.about {
+  background-color: olive;
+}
   
   .hello {
+    background-color: rgb(54, 55, 55);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,9 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 // import "../style/ProjectSection.css";
 
+
+
+
+
+
 function ProjectSection() {
+
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate("/project");
+  }
+  
   return (
-    <div className='main-project'>
+    <div className='main-project' onClick={handleClick}>
       <h2 className="heading"> Project Section</h2>
       {/* <p>Title: Interactive Weather Map</p>
       <p>Category: Tech</p>

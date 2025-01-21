@@ -1,65 +1,95 @@
-import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGlobe } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import '../style/Contact.css';
+import React, { useState } from 'react';
+import { Send } from 'lucide-react';
+import "../style/Contact.css";
 
-const FloatingIcons = () => {
-  const iconStyle = {
-    position: 'absolute',
-    fontSize: '40px',
-    animation: 'float 6s ease-in-out infinite',
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
   };
 
   return (
-    <>
-      <motion.div
-        style={{ ...iconStyle, top: '10%', left: '20%' }}
-        animate={{ x: 'random', y: 'random' }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}
-      >
-        <FaPhoneAlt />
-      </motion.div>
-      <motion.div
-        style={{ ...iconStyle, top: '30%', right: '10%' }}
-        animate={{ x: 'random', y: 'random' }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}
-      >
-        <FaEnvelope />
-      </motion.div>
-      <motion.div
-        style={{ ...iconStyle, top: '50%', left: '50%' }}
-        animate={{ x: 'random', y: 'random' }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}
-      >
-        <FaLinkedin />
-      </motion.div>
-      <motion.div
-        style={{ ...iconStyle, top: '70%', right: '20%' }}
-        animate={{ x: 'random', y: 'random' }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: 'loop' }}
-      >
-        <FaGlobe />
-      </motion.div>
-    </>
-  );
-};
+    <div className="contact-page">
+      <div className="background-animation">
+        {[...Array(100)].map((_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${Math.random() * 6 + 2}s`
+            }}
+          />
+        ))}
+      </div>
 
-const ContactUsPage = () => {
-  return (
-    <div className="contact-us-page">
-      <h1>Contact Us</h1>
-      <FloatingIcons />
-      <form className="contact-form">
-        <label>Name:</label>
-        <input type="text" placeholder="Your Name" />
-        <label>Email:</label>
-        <input type="email" placeholder="Your Email" />
-        <label>Message:</label>
-        <textarea placeholder="Your Message" />
-        <button type="submit">Submit</button>
-      </form>
+      <div className="container">
+        <div className="header">
+          <h1>Get in Touch</h1>
+          <p>Let's create something amazing together. Feel free to reach out anytime!</p>
+        </div>
+
+        <div className="content-grid">
+          <div className="card form-card">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={4}
+                  required
+                />
+              </div>
+              <button type="submit" className="submit-button">
+                <Send className="icon" />
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default ContactUsPage;
+export default ContactPage;

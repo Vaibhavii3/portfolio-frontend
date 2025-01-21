@@ -1,0 +1,7 @@
+.Project-container {
+    background: linear-gradient(45deg, #0c0605, #622f63);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -11,9 +11,6 @@ const Photos = [
     { id: 6, url: '../img/6.jpeg'},
     { id: 7, url: '../img/7.jpg'},
     { id: 8, url: '../img/8.jpg'},
-    // { id: 9, url: '../img/9.jpg'},
-    // { id: 10, url: '../img/10.jpg'},
-    // { id: 11, url: '../img/11.jpg'},
     { id: 12, url: '../img/12.jpg'},
     { id: 13, url: '../img/13.jpg'},
     { id: 14, url: '../img/14.jpg'},
@@ -27,7 +24,7 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.3, // Images appear one after another
+            staggerChildren: 0.3,
         },
     },
 };

@@ -1,5 +1,5 @@
 .photo-gallery {
-    column-count: 5; /* Default columns */
+    column-count: 5; 
     column-gap: 16px;
     margin: 20px;
     padding: 0;

@@ -9,6 +9,7 @@ const LaptopWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+
 `;
 
 const LaptopBody = styled(motion.div)`

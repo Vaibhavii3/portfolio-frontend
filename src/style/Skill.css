@@ -1,0 +1,52 @@
+.skill-container {
+    /* width: 100%; */
+    padding: 2rem;
+    color: #fff;
+    /* height: 100vh; */
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-section {
+    margin: 1rem;
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.svg-box {
+    width: 100%;
+    height: 100vh;
+    /* max-height: 500px; */
+}
+
+.circle {
+    cursor: pointer;
+    /* transition: transform 0.3s ease; */
+}
+
+
+
+/* Frontend category styles */
+.frontend-svg .circle {
+    fill: #61dafb; /* React's color */
+  }
+  .frontend-svg line {
+    stroke: rgba(97, 218, 251, 0.2);
+  }
+  
+  /* Backend category styles */
+  .backend-svg .circle {
+    fill: #68a063; /* Node.js color */
+  }
+  .backend-svg line {
+    stroke: rgba(104, 160, 99, 0.2);
+  }
+  
+  /* Cloud category styles */
+  .cloud-svg .circle {
+    fill: #ff9900; /* AWS color */
+  }
+  .cloud-svg line {
+    stroke: rgba(255, 153, 0, 0.2);
+  }

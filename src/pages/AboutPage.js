@@ -183,7 +183,7 @@ const AboutPage = () => {
         </div>
         <div className="hero-3d">
           <ThreeScene />
-          <p className="interaction-hint">Hover to interact ✨</p>
+          {/* <p className="interaction-hint">Hover to interact ✨</p> */}
         </div>
       </div>
 

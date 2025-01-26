@@ -4,42 +4,41 @@ import "../style/Skill.css";
 const SkillPage = () => {
   const [linesByCategory, setLinesByCategory] = useState({});
 
-  // Sample skills data grouped by categories
   const skillsByCategory = {
-    Languages: [
-      { id: 1, name: "HTML", level: 90, x: 200, y: 150 },
-      { id: 2, name: "JavaScript", level: 80, x: 150, y: 250 },
-      { id: 3, name: "CSS", level: 85, x: 250, y: 300 },
+    "Languages": [
+      { id: 1, name: "HTML", level: 60, x: 250, y: 50 },
+      { id: 2, name: "JavaScript", level: 80, x: 350, y: 150 },
+      { id: 3, name: "CSS", level: 85, x: 190, y: 220 },
     ],
-    FrameworksandLibraries: [
-      { id: 4, name: "SASS", level: 85, x: 300, y: 200 },
-      { id: 5, name: "Bootstrap", level: 75, x: 250, y: 350 },
-      { id: 6, name: "Tailwind-css", level: 80, x: 350, y: 400 },
-      { id: 7, name: "React.js", level: 65, x: 150, y: 450 },
+    "Frameworks and Libraries": [
+      { id: 4, name: "SASS", level: 85, x: 350, y: 40 },
+      { id: 5, name: "Bootstrap", level: 75, x: 280, y: 90 },
+      { id: 6, name: "Tailwind-css", level: 80, x: 120, y: 120 },
+      { id: 7, name: "React.js", level: 65, x: 280, y: 180 },
     ],
-    Tools: [
-      { id: 8, name: "Node.js", level: 70, x: 350, y: 250 },
-      { id: 9, name: "Docker", level: 80, x: 400, y: 300 },
+    "Tools": [
+      { id: 8, name: "Node.js", level: 70, x: 250, y: 50 },
+      { id: 9, name: "Docker", level: 80, x: 180, y: 150 },
     ],
-    VersionControl: [
+    "Version Control": [
       { id: 9, name: "Git", level: 60, x: 350, y: 100},
       { id: 10, name: "GitHub", level: 75, x:300, y: 200},
       { id: 11, name: "Jira", level: 95, x:200, y: 90},
     ],
-    DesignSkills: [
-      { id: 12, name: "canva", level: 90, x: 300, y:150},
-      { id: 13, name: "figma", level: 85, x: 250, y:250},
+    "Design Skills": [
+      { id: 12, name: "canva", level: 90, x: 300, y:50},
+      { id: 13, name: "figma", level: 85, x: 130, y:150},
     ],
-    Backend: [
-      { id: 14, name: "Node.js", level: 67, x: 250, y: 350},
-      { id: 15, name: "Express.js", level: 90, x: 250, y: 200},
+    "Backend": [
+      { id: 14, name: "Node.js", level: 67, x: 250, y: 80},
+      { id: 15, name: "Express.js", level: 90, x: 250, y: 170},
     ],
-    Database: [
-      { id: 16, name: "MongoDB", level: 86, x: 350, y: 150},
-      { id: 17, name: "Mongoose", level: 67, x: 250, y: 200},
+    "Database": [
+      { id: 16, name: "MongoDB", level: 86, x: 350, y: 50},
+      { id: 17, name: "Mongoose", level: 67, x: 250, y: 150},
     ],
-    ContentManagement: [
-      { id: 18, name: "Sanity.io", level: 85, x: 200, y: 150},
+    "Content Management": [
+      { id: 18, name: "Sanity.io", level: 85, x: 200, y: 60},
     ],
   };
 

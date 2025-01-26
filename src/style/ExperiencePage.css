@@ -1,0 +1,120 @@
+.experience-svg {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.experience-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+}
+
+.experience-card {
+    background-color: rgba(31, 41, 55, 0.6);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
+
+.experience-card h3 {
+    color: #64c8ff;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.experience-card h4 {
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
+}
+
+.period {
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #a0aec0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-tag {
+    background-color: rgba(100, 200, 255, 0.2);
+    color: #64c8ff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.location {
+    color: #a0aec0;
+    font-style: italic;
+}
+
+.experience-circle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.experience-circle:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .experience-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+.experience-container {
+    background-color: #0a192f;
+    background-image: 
+        linear-gradient(135deg, rgba(100,200,255,0.05) 0%, transparent 50%),
+        linear-gradient(45deg, rgba(255,100,200,0.05) 0%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.experience-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(100,200,255,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100,200,255,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+}  
+

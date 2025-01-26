@@ -1,7 +1,7 @@
 .contact-page {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg, #0c0605 0%, #622f63);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -77,9 +77,9 @@
 }
 
 .card {
-  background: rgba(63, 43, 63, 0.5);
+  background: rgba(15, 15, 16, 0.3);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
   padding: 2rem;
   animation: slideUp 0.5s ease-out forwards;
@@ -109,8 +109,8 @@
 .form-group textarea {
   width: 100%;
   padding: 0.75rem;
-  background: rgba(114, 114, 114, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgb(22, 33, 62, 0.3);
+  border: 1px solid rgba(248, 248, 248, 0.2);
   border-radius: 0.5rem;
   color: white;
   transition: all 0.3s ease;
@@ -119,8 +119,8 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #622f63;
-  box-shadow: 0 0 0 2px rgba(98, 47, 99, 0.302);
+  border-color: #16213e;
+  box-shadow: 0 0 0 2px rgba(22, 33, 62, 0.3);
 }
 
 .submit-button {
@@ -130,7 +130,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem;
-  background: #622f63;
+  background: #202d54;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -139,7 +139,7 @@
 }
 
 .submit-button:hover {
-  background: #552656;
+  background: #16213e;
 }
 
 .submit-button .icon {

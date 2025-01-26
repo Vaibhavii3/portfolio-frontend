@@ -17,7 +17,7 @@ function SocialHandles() {
           <FaLinkedin />
         </a>
 
-        <a href="https://instagram.com/vaibhavii.3" target="_blank" rel="noopener noreferrer" className="social-link instagram">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
           <FaInstagram />
         </a>
 

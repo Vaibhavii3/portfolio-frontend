@@ -12,7 +12,7 @@ const Education = () => {
 
   return (
     <div className="education" onClick={handleClick}>
-      <h2 className='heading'>Education</h2>
+      <h2 className='heading'> Resume </h2>
       
     </div>
   );

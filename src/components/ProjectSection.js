@@ -11,7 +11,7 @@ function ProjectSection() {
   
   return (
     <div className='main-project' onClick={handleClick}>
-      <h2 className="heading"> Project Section</h2>
+      <h2 className="heading"> Projects </h2>
     </div>
   );
 }

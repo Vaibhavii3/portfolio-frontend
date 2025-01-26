@@ -14,7 +14,7 @@ const TechnicalSkills = () => {
 
   return (
     <div className="technical-skills" onClick={handleClick}>
-      <h2 className='heading'>Technical Skills</h2>
+      <h2 className='heading'> Skills </h2>
       
     </div>
   );

@@ -6,32 +6,32 @@ const SkillPage = () => {
 
   const skillsByCategory = {
     "Languages": [
-      { id: 1, name: "HTML", level: 60, x: 250, y: 50 },
-      { id: 2, name: "JavaScript", level: 80, x: 350, y: 150 },
+      { id: 1, name: "HTML", level: 30, x: 250, y: 50 },
+      { id: 2, name: "JavaScript", level: 60, x: 350, y: 150 },
       { id: 3, name: "CSS", level: 85, x: 190, y: 220 },
     ],
     "Frameworks and Libraries": [
-      { id: 4, name: "SASS", level: 85, x: 350, y: 40 },
-      { id: 5, name: "Bootstrap", level: 75, x: 280, y: 90 },
-      { id: 6, name: "Tailwind-css", level: 80, x: 120, y: 120 },
-      { id: 7, name: "React.js", level: 65, x: 280, y: 180 },
+      { id: 4, name: "SASS", level: 35, x: 350, y: 40 },
+      { id: 5, name: "Bootstrap", level: 85, x: 280, y: 90 },
+      { id: 6, name: "Tailwind-css", level: 60, x: 120, y: 120 },
+      { id: 7, name: "React.js", level: 55, x: 280, y: 180 },
     ],
     "Tools": [
-      { id: 8, name: "Node.js", level: 70, x: 250, y: 50 },
-      { id: 9, name: "Docker", level: 80, x: 180, y: 150 },
+      { id: 8, name: "Node.js", level: 80, x: 250, y: 50 },
+      { id: 9, name: "Docker", level: 40, x: 180, y: 150 },
     ],
     "Version Control": [
       { id: 9, name: "Git", level: 60, x: 350, y: 100},
-      { id: 10, name: "GitHub", level: 75, x:300, y: 200},
+      { id: 10, name: "GitHub", level: 55, x:300, y: 200},
       { id: 11, name: "Jira", level: 95, x:200, y: 90},
     ],
     "Design Skills": [
       { id: 12, name: "canva", level: 90, x: 300, y:50},
-      { id: 13, name: "figma", level: 85, x: 130, y:150},
+      { id: 13, name: "figma", level: 65, x: 130, y:150},
     ],
     "Backend": [
-      { id: 14, name: "Node.js", level: 67, x: 250, y: 80},
-      { id: 15, name: "Express.js", level: 90, x: 250, y: 170},
+      { id: 14, name: "Node.js", level: 57, x: 250, y: 80},
+      { id: 15, name: "Express.js", level: 40, x: 250, y: 170},
     ],
     "Database": [
       { id: 16, name: "MongoDB", level: 86, x: 350, y: 50},

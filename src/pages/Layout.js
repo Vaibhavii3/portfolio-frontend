@@ -7,7 +7,7 @@ import Education from '../components/Education';
 import ProjectSection from '../components/ProjectSection';
 import Experience from '../components/Experience';
 import ContactSection from '../components/ContactSection';
-// import AboutPage from './pages/AboutPage';
+
 
 
 import '../style/Layout.css';
@@ -21,7 +21,8 @@ function Layout() {
     visible: {
       opacity: 1,
       transition: { 
-        staggerChildren: 0.2,
+        delayChildren: 0.3,
+        staggerChildren: 0.25,
         when: "beforeChildren",
       },
     },
@@ -29,12 +30,12 @@ function Layout() {
 
   const hoverEffect = {
     scale: 1.02,
-    boxShadow: "0 8px 20px rgba(0, 0, 0, 0.3)", // Enhanced shadow
+    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)", // Enhanced shadow
     backgroundColor: "rgba(255, 255, 255, 0.3)", // Change background color on hover
     transition: {
       type: "spring",
-      stiffness: 150,
-      damping: 20,
+      stiffness: 200,
+      damping: 15,
     },
   };
 
@@ -188,7 +189,6 @@ function Layout() {
           <Route path="/projects" element={<ProjectSection />} />
           <Route path="/contact" element={<ContactSection />} />
           <Route path="/profilePage" element={<ProfileSection />} />
-          {/* <Route path="/aboutPage" element={<AboutPage />} /> */}
         </Routes>
       </div>
     </div>  

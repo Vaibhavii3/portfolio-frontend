@@ -6,25 +6,23 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
-
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .app {
     box-sizing: border-box;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    align-items: center;
 }
   
 .grid-container {
@@ -44,12 +42,12 @@
 }
   
 .grid-item h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   margin-bottom: 10px;
 }
   
 .grid-item p {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   line-height: 1.5;
 }
   
@@ -78,37 +76,89 @@
   grid-row:  span 1;
 } 
 
-/* Responsive Design for Mobile Screens */
-@media screen and (max-width: 768px) {
+
+/* Tablet Layout */
+@media screen and (max-width: 1024px) {
   .grid-container {
-    grid-template-columns: 1fr;  
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .profile,
-  .social,
-  .project,
-  .experience,
-  .education,
+  .profile {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .social {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .experience {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .project {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .skills 
+
   .contact {
-    grid-column: span 1;  
-    grid-row: auto;  
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+  .body-wrapper {
+    padding: 10px;
   }
 
   .app {
     padding: 15px;
-    width: 95%;
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .grid-item {
     padding: 15px;
   }
 
-  .grid-item h3 {
-    font-size: 1rem;
+  /* All sections take full width on mobile */
+  .profile,
+  .social,
+  .experience,
+  .project,
+  .skills,
+  .education,
+  .contact {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .body-wrapper {
+    padding: 5px;
   }
 
-  .grid-item p {
-    font-size: 0.8rem;
+  .app {
+    padding: 10px;
+  }
+
+  .grid-container {
+    gap: 10px;
+  }
+
+  .grid-item {
+    padding: 12px;
   }
 }
